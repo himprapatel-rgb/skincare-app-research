@@ -1,94 +1,161 @@
-# Statement of Work (SOW): AI Skincare App Project
-
-## 1. Project Overview
-
-Develop a mobile app powered by advanced AI and sensor technologies for personalized skin analysis, treatment recommendations, and progress tracking. The app will be designed for potential acquisition by major tech companies (Apple, Google).
-
-## 2. Project Objectives
-
-- Deliver highly accurate, AI-driven skin diagnostics using device cameras and external sensors
-- Provide customized skincare routines, product recommendations, and actionable insights
-- Ensure privacy, security, and fairness for all users
-- Build scalable, maintainable codebase ready for integration with Apple/Google platforms
-
-## 3. Scope of Work
-
-### 3.1 Features
-
-| Feature | Description |
-|---------|-------------|
-| AI Skin Analysis | Real-time evaluation of skin condition (acne, wrinkles, pigmentation, damage) |
-| Personalized Recommendations | ML and ingredient databases for custom product/regimen selection |
-| Sensor Integration | Support for skin hydration, UV, temperature, and wearable sensors |
-| Progress Tracking | Visual analytics, historical timeline, and predictive insights |
-| Virtual Try-On | AR overlays and generative AI to preview effects of products |
-| Privacy & Security | Local data processing, encrypted storage, and bias correction |
-
-### 3.2 Technical Deliverables
-
-- Mobile-first app supporting iOS and Android (React Native, Flutter, or native code)
-- Modular AI components (image processing, recommendation engine, data fusion)
-- Secure backend and optional cloud sync
-- Developer documentation and onboarding guides
-
-## 4. Milestones & Timeline
-
-| Phase | Tasks | Duration |
-|-------|-------|----------|
-| Phase 1 | Requirements and research | Week 1-2 |
-| Phase 2 | MVP prototype: Core analysis and recommendations | Week 3-4 |
-| Phase 3 | Sensor/AR integration and progress tracking | Week 5-7 |
-| Phase 4 | User testing and bias correction | Week 8 |
-| Phase 5 | Final documentation, pitch demo, and launch | Week 9-10 |
-
-## 5. Success Criteria
-
-- Accurate skin diagnostics and actionable recommendations
-- Seamless cross-platform performance
-- Positive user feedback and clear acquisition value
-- Compliance with Apple/Google app store guidelines
-
-## 6. Team & Responsibilities
-
-| Role | Responsibilities |
-|------|------------------|
-| Product Lead | Define features, competitive strategy |
-| AI/ML Developer | Build skin analysis and recommendation models |
-| Mobile Developer | Implement UI, sensor integration, progress tracking |
-| UX/UI Designer | Create intuitive workflows and AR visualizations |
-| QA Engineer | Test app for bugs, fairness, security |
-
-## 7. Assumptions & Risks
-
-### Assumptions
-- Sufficient dataset access for AI model training
-- Team has required technical expertise
-- Development tools and APIs are available
-
-### Risks
-| Risk | Mitigation |
-|------|------------|
-| Limited training data | Partner with dermatology clinics, use synthetic data |
-| Privacy compliance | Implement privacy-by-design, consult legal experts |
-| Technical challenges (AR, sensors) | Prototype early, use open-source resources |
-| App store rejection | Follow guidelines strictly, test thoroughly |
-
-## 8. Resources & Budget
-
-- Open-source AI libraries and frameworks (TensorFlow, PyTorch, CoreML)
-- Device emulators, test phones (iOS/Android)
-- Cloud and local backend options for testing
-- Design tools (Figma, Sketch)
-
-## 9. Acceptance Criteria
-
-- All features functional and tested
-- Documentation complete
-- App approved on both App Store and Google Play
-- Demo and pitch materials ready for acquisition discussions
+# Statement of Work (SOW) - AI Skin-Care Application
 
 ---
 
-**Prepared by:** Skincare App Research Team  
-**Date:** November 24, 2025  
-**Version:** 1.0
+## 1. Project Overview
+
+The purpose of this project is to design, develop, and deploy an AI-powered skin-care analysis application capable of scanning a user's face, detecting skin conditions, recommending personalised routines, and enabling future scalability for cloud deployment. The app will analyse images using computer vision and provide secure user profiles, history tracking, and product recommendations.
+
+---
+
+## 2. Scope of Work
+
+### 2.1 Features to be Developed
+
+#### A. AI & Image Processing
+- Facial skin analysis (acne, dark circles, wrinkles, pigmentation, oiliness, dryness)
+- AI-powered quality enhancement (compress image to small size while keeping Ultra-HD quality)
+- Real-time or uploaded photo scanning
+- Skin-tone and texture detection
+- Generate daily/weekly skin-care insights
+
+#### B. User Management
+- User registration/login (email, social sign-in)
+- Store user profile: age, gender, skin type, and preferences
+- History of uploaded images and previous analysis reports
+- Privacy-focused system ensuring no image misuse
+
+#### C. Skin-Care Recommendation Engine
+- Personalised routine (AM / PM)
+- Product suggestions (open-source datasets or user-provided database)
+- Lifestyle recommendations (water intake, sleep, SPF reminders)
+
+#### D. Dashboard & UI/UX
+- Clean and modern UI for mobile and web
+- Real-time results screen
+- Save/Share report option
+- Multi-language support (English initially)
+
+#### E. Admin Panel
+- Manage users
+- Manage recommended products
+- Review logs and AI reports
+
+#### F. Integration
+- Cloud hosting (free/low-cost options for testing: Vercel, Netlify, GitHub Pages + backend on Render/Railway)
+- API integration for AI model (custom or open-source models like Mediapipe, DeepFace, YOLO, Skin-disease datasets)
+
+---
+
+## 3. Technical Approach
+
+### 3.1 Architecture
+
+| Component | Technology Options |
+|-----------|-------------------|
+| **Frontend** | React Native / Flutter (mobile) OR React.js (web) |
+| **Backend** | Node.js / Python FastAPI |
+| **AI Engine** | Pre-trained CNN models, Open-source datasets (HAM10000, DermNet, Kaggle skin datasets), Custom fine-tuned model |
+| **Database** | Firebase or MongoDB Atlas (free tier) - Optional: No database required if only anonymous analysis is offered |
+
+### 3.2 Cloud & DevOps
+- GitHub repository for source control
+- CI/CD pipeline (GitHub Actions)
+- Deployment to Vercel / Netlify / Render
+
+---
+
+## 4. Deliverables
+
+| # | Deliverable |
+|---|-------------|
+| 1 | UI/UX design wireframes |
+| 2 | AI model setup + training/test results |
+| 3 | Frontend application |
+| 4 | Backend APIs |
+| 5 | Admin dashboard |
+| 6 | Database setup |
+| 7 | Deployment & hosting |
+| 8 | Testing & QA reports |
+| 9 | User documentation |
+| 10 | Final production build (APK / Web link) |
+
+---
+
+## 5. Project Timeline
+
+| Phase | Duration | Deliverables |
+|-------|----------|-------------|
+| Requirements Gathering | 3-5 days | Finalised requirements |
+| UI/UX Design | 1-2 weeks | Wireframes, prototypes |
+| AI Model Development | 2-4 weeks | Trained model |
+| Backend Development | 1-2 weeks | APIs ready |
+| Frontend Development | 2-3 weeks | App screens |
+| Testing & QA | 1 week | Bug-free build |
+| Deployment | 2-3 days | Live app |
+
+**Total Estimated Timeline:** 6-10 weeks (depending on complexity)
+
+---
+
+## 6. Responsibilities
+
+### Client Responsibilities
+- Provide product list (optional)
+- Approve UI/UX designs
+- Provide branding (logo, theme)
+- Support testing and feedback cycle
+
+### Developer Responsibilities
+- End-to-end development
+- AI training & model integration
+- UI/UX development
+- Testing + bug fixes
+- Deployment setup
+- Code documentation
+- Post-launch support (30 days)
+
+---
+
+## 7. Acceptance Criteria
+
+The project will be considered complete when:
+- [ ] All listed features are implemented and verified
+- [ ] AI skin analysis delivers acceptable accuracy
+- [ ] All UI/UX designs match the approved mockups
+- [ ] App is deployed and fully usable
+- [ ] Documentation is provided
+- [ ] Final demo session is completed
+
+---
+
+## 8. Pricing (Optional Template)
+
+| Model | Rate |
+|-------|------|
+| Fixed Price | EUR XX,000 |
+| Hourly Model | EUR XX/hour |
+
+---
+
+## 9. Assumptions
+
+- The client agrees to provide approvals within 48 hours
+- AI results are based on available datasets and not a medical diagnosis
+- Additional features outside the scope will require a change request
+
+---
+
+## 10. Risks & Constraints
+
+| Risk | Description |
+|------|-------------|
+| Image Quality | Accuracy depends on the quality of input images |
+| Cloud Performance | Cloud hosting performance may vary in free-tier services |
+| Legal/Medical | Medical/legal disclaimers are required (app is not a doctor) |
+
+---
+
+**Document Version:** 2.0  
+**Last Updated:** November 24, 2025  
+**Prepared by:** Skincare App Research Team
